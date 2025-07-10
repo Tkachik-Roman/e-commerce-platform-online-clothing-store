@@ -4,6 +4,7 @@ import MenuItem from "../menu-item/menu-item.component";
 
 import "./directory.styles.scss";
 
+// Каталог одежды на домашней странице магазина
 class Directory extends React.Component {
   constructor() {
     super();

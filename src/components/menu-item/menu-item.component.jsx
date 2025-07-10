@@ -3,6 +3,7 @@ import { withRouter } from "react-router-dom";
 
 import "./menu-item.styles.scss";
 
+// Элемент меню каталога домашней страницы магазина
 const MenuItem = ({ title, imageUrl, size, history, linkUrl, match }) => (
   <div
     className={`${size} menu-item`}

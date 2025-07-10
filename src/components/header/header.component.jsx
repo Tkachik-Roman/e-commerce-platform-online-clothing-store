@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import { ReactComponent as Logo } from "..//..//assets/crown.svg";
+import { ReactComponent as Logo } from "..//..//assets/megaStyle.svg";
 
 import "./header.styles.scss";
 
+// Шапка приложения с логотипом магазина, меню и контактами
 const Header = () => (
   <div className="header">
     <Link className="logo-container" to="/">

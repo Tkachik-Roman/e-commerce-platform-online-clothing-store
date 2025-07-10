@@ -2,6 +2,7 @@ import React from "react";
 
 import "./collection-item.styles.scss";
 
+// Элемент из предпросмотра коллекции одежды
 const CollectionItem = ({ id, name, price, imageUrl }) => (
   <div className="collection-item">
     <div
