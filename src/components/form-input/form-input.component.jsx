@@ -15,6 +15,14 @@ const FormInput = ({ handleChange, label, ...otherProps }) => (
           ? "Электронная почта"
           : label === "password"
           ? "Пароль"
+          : label === "Display Name"
+          ? "Имя"
+          : label === "Email"
+          ? "Электронная почта"
+          : label === "Password"
+          ? "Пароль"
+          : label === "Confirm Password"
+          ? "Подтвердите пароль"
           : label}
       </label>
     ) : null}
