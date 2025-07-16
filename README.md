@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+# online-clothing-store (онлайн магазин одежды)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Описание:<br />
+Это многостраничное приложение для электронной коммерции, похожее на онлайн-магазин одежды Shopify.<br />
+Приложение онлайн-магазина одежды построено на библиотеке React с использованием библиотеки Redux для управления состоянием.<br />
+Первым экраном приложения является домашняя страница, состоящая из компонента каталога в виде меню из 5 элементов меню в виде компонентов. При наведении курсора на элемент меню, добавляется белый фон контенту, изменяется прозрачность, реализуется эффект увеличения картинки фона - это делает интерфейс "живым" и современным, белый фон улучшает читаемость, увеличивающаяся картинка привлекает внимание и направляет взгляд пользователя, подсказывая пользователю, что элемент кликабелен.<br />
+В верху, не важно на какой странице находится пользователь, располагается шапка (header), содержащая логотип и главное меню. Это простой способ навигации между страницами. Главное меню включает пункты: коллекции одежды, контакты, вход/выход.<br />
+При выборе пункта меню "Коллекции одежды" осуществляется переход на страницу магазина с предпросмотром доступных коллекций одежды. Для каждой категории одежды отображаются 4 элемента, а также ссылка на эту категорию. Если ее нажать, произойдет переход на страницу конкретно этой категории одежды.<br />
+При выборе пункта меню "Вход", реализуется переход на страницу регистрации (sign up - создания аккаунта) и входа в аккаунт (sign in - авторизации, аутентификация). Сохранение пользователя происходит в backend, для чего используется Firebase. Вход в приложение осуществляется по электронной почте и паролю на основании аккаунта, который предварительно создается с помощью формы sign up. Также для удобства пользователя реализована функция входа по профилю в Google. Используя вход по Google, загружается Gmail аккаунт пользователя, под которыми он уже входил, или он может использовать другой аккаунт. Благодаря этому процесс аутентификации значительно упрощается.<br />
+В обоих компонентах sing in и sign up используется один и тот же компонент формы form input (изменяются только параметры), один и тот же компонент кнопки custom button (изменяется только стиль кнопки). Добавлена анимация transition для лейблов имя, электронная почта, пароль, подтвердить пароль при кликании пользователем курсором на поле ввода.<br />
+В приложение интегрирован Firebase для аутентификация (authentication) и для хранилища данных (storage). Firebase создан Google для эффективных запросов к базам данных, хранения данных, что предоставляет нам очень простой способ аутентификации, которую создать с нуля очень тяжело.<br />.
+Firebase следит за экземплярами приложения, которые открыты и взаимодействует с Firebase. Это все происходит до тех пор, пока пользователь не выйдет (sign out). Так сохраняется сеанс приложения. Firebase позволяет пользователю входить в стороннии сервисы (Facebook, Twitter, Github logins), так уменьшаются барьеры для пользователей по входу в приложение, им не нужно проходить через долгий процесс входа с самого начала, например, они могут просто использовать sign in with Google. Сохранение аутентифицированных пользователей, полученных от библиотеки authentication, осуществляется в базу данных. И только после этого данные сохранятются в state приложения.<br />
+**Домашняя страница:**<br />
+!['Скриншот проекта 1'](img/screenshot_01_homepage.PNG)<br />
+**Страница магазина с предпросмотром доступных коллекций одежды:**<br />
+!['Скриншот проекта 2'](img/screenshot_02_shoppage_cloth_collections)<br />
+**Firebase провайдеры для приложения:**<br />
+!['Скриншот проекта 3'](img/screenshot_03_sign-in-and-up-firebase-providers)<br />
+**Регистрация пользователя в приложении:**<br />
+!['Скриншот проекта 4'](img/screenshot_04_typed_wrong_registration_password)<br />
+**Создание пользователя в базе данных Firebase Datastore:**<br />
+!['Скриншот проекта 5'](img/screenshot_05_create_user_in_database)<br />
+**Вход пользователя в приложение через Google аккаунт пользователя:**<br />
+!['Скриншот проекта 6'](img/screenshot_06_sign_in_with_google)<br />
+**Вход пользователя в приложение по электронной почте и паролю:**<br />
+!['Скриншот проекта 7'](img/screenshot_07_sign_in_with_email_passworde)<br />
+**Аутентификация пользователя в Firebase authentication:**<br />
+!['Скриншот проекта 8'](img/screenshot_08_sign_in_with_google_firebase_auth)<br />

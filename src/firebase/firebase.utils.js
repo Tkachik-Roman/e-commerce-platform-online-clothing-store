@@ -3,12 +3,12 @@ import "firebase/compat/firestore";
 import "firebase/compat/auth";
 
 const config = {
-  apiKey: "my-secret-firebase-config-API-KEY",
-  authDomain: "online-clothing-store-db-secret.firebaseapp.com",
-  projectId: "online-clothing-store-db-secret",
-  storageBucket: "online-clothing-store-db-secret.firebasestorage.app",
-  messagingSenderId: "secret",
-  appId: "secret",
+  apiKey: "AIzaSyARt07gpJtfvgsjWf4z4Z8CVjWkItr9swg",
+  authDomain: "online-clothing-store-db-5315a.firebaseapp.com",
+  projectId: "online-clothing-store-db-5315a",
+  storageBucket: "online-clothing-store-db-5315a.firebasestorage.app",
+  messagingSenderId: "447200037245",
+  appId: "1:447200037245:web:03aac9cf5a6bca2c21e414",
 };
 
 firebase.initializeApp(config);
