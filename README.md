@@ -23,6 +23,6 @@ Firebase следит за экземплярами приложения, кот
 **Вход пользователя в приложение через Google аккаунт пользователя:**<br />
 !['Скриншот проекта 6'](img/screenshot_06_sign_in_with_google.PNG)<br />
 **Вход пользователя в приложение по электронной почте и паролю:**<br />
-!['Скриншот проекта 7'](img/screenshot_07_sign_in_with_email_passworde.PNG)<br />
+!['Скриншот проекта 7'](img/screenshot_07_sign_in_with_email_password.PNG)<br />
 **Аутентификация пользователя в Firebase authentication:**<br />
 !['Скриншот проекта 8'](img/screenshot_08_sign_in_with_google_firebase_auth.PNG)<br />
