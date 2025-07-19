@@ -17,15 +17,17 @@ Firebase следит за экземплярами приложения, кот
 !['Скриншот проекта 1'](img/screenshot_01_homepage.PNG)<br />
 **Страница магазина с предпросмотром доступных коллекций одежды:**<br />
 !['Скриншот проекта 2'](img/screenshot_02_shoppage_cloth_collections.PNG)<br />
+**Добавление выбранного товара в корзину, просмотр добавленного товара в выпадающем меню иконки корзины:**<br />
+!['Скриншот проекта 2'](img/screenshot_03_adding_to_cart.PNG)<br />
 **Firebase провайдеры для приложения:**<br />
-!['Скриншот проекта 3'](img/screenshot_03_sign-in-and-up-firebase-providers.PNG)<br />
+!['Скриншот проекта 3'](img/screenshot_04_sign-in-and-up-firebase-providers.PNG)<br />
 **Регистрация пользователя в приложении:**<br />
-!['Скриншот проекта 4'](img/screenshot_04_typed_wrong_registration_password.PNG)<br />
+!['Скриншот проекта 4'](img/screenshot_05_typed_wrong_registration_password.PNG)<br />
 **Создание пользователя в базе данных Firebase Datastore:**<br />
-!['Скриншот проекта 5'](img/screenshot_05_create_user_in_database.PNG)<br />
+!['Скриншот проекта 5'](img/screenshot_06_create_user_in_database.PNG)<br />
 **Вход пользователя в приложение через Google аккаунт пользователя:**<br />
-!['Скриншот проекта 6'](img/screenshot_06_sign_in_with_google.PNG)<br />
+!['Скриншот проекта 6'](img/screenshot_07_sign_in_with_google.PNG)<br />
 **Вход пользователя в приложение по электронной почте и паролю:**<br />
-!['Скриншот проекта 7'](img/screenshot_07_sign_in_with_email_password.PNG)<br />
+!['Скриншот проекта 7'](img/screenshot_08_sign_in_with_email_password.PNG)<br />
 **Аутентификация пользователя в Firebase authentication:**<br />
-!['Скриншот проекта 8'](img/screenshot_08_sign_in_with_google_firebase_auth.PNG)<br />
+!['Скриншот проекта 8'](img/screenshot_09_sign_in_with_google_firebase_auth.PNG)<br />
